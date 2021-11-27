@@ -1,0 +1,111 @@
+// footer
+
+footer{
+  background: #ECECEC;
+  padding: 40px 0 20px;
+}
+
+.footer{
+  text-align: center;
+  p{
+    font-size: 0.625rem;
+    line-height: 1rem;
+  }
+}
+
+.copyright{
+  margin-bottom: 6px;
+}
+.copyright,
+.author{
+  a{
+    color: #23527C;
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+}
+
+.author{
+  margin-top: 43px;
+}
+
+//リンクの形状
+#page_top{
+  position: fixed;
+  right: 50px;
+  bottom: 100px;
+  z-index: 10;
+  a{
+    display: block;
+    width: 70px;
+    height: 70px;
+    background: #ECECEC;
+    &:hover{
+      cursor: pointer;
+    }
+    &::before,
+    &::after{
+      position: absolute;
+      content: '';
+      width: 25px;
+      height: 7px;
+      background: black;
+    }
+    &::before{
+      top: 45%;
+      right: 29px;
+      transform: rotate(-45deg);
+    }
+    &::after{
+      top: 45%;
+      right: 15px;
+      transform: rotate(45deg);
+    }
+  }
+}
+
+@media screen and (max-width: 769px){
+  footer{
+    padding: 20px 0 5px;
+  }
+
+  .author{
+    margin-top: 2rem;
+  }
+
+  #page_top{
+    position: fixed;
+    right: 30px;
+    bottom: 100px;
+    z-index: 10;
+    a{
+      display: block;
+      width: 30px;
+      height: 30px;
+      background: #ECECEC;
+      &:hover{
+        cursor: pointer;
+      }
+      &::before,
+      &::after{
+        position: absolute;
+        content: '';
+        width: 10px;
+        height: 3px;
+        background: black;
+      }
+      &::before{
+        top: 45%;
+        right: 12px;
+        transform: rotate(-45deg);
+      }
+      &::after{
+        top: 45%;
+        right: 7px;
+        transform: rotate(45deg);
+      }
+    }
+  }
+
+}

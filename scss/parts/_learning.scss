@@ -1,0 +1,124 @@
+// learning
+.learning-content{
+  background-image: url("../img/classbg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 60px 0 40px;
+}
+
+.learning{
+  text-align: center;
+  h1{
+    color: white;
+    margin-bottom: 10px;
+    line-height: 2.5rem;
+  }
+  >p{
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 10px;
+    line-height: 1.625rem;
+  }
+}
+
+.learning-list{
+  display: flex;
+  justify-content: center;
+  padding: 40px 0 30px;
+}
+
+.before,
+.during{
+  width: 375px;
+  border: 2px solid #136AB3;
+  border-radius: 5px;
+  background: white;
+  margin: 0 15px;
+  padding: 0;
+  background: #136AB3;
+  h2{
+    color: white;
+    line-height: 2rem;
+    margin: 0 auto ;
+    padding: 15px 0;
+  }
+  li{
+    font-size: 1rem;
+    line-height: 1.675rem;
+    font-weight: bold;
+    padding: 10px 0;
+    background: white;
+    border-bottom: 0.1px solid rgba(255,128,128,0.1);
+    &:first-child{
+      padding-top: 20px;
+    }
+    &:last-child{
+      border-bottom: none;
+    }
+  }
+}
+
+@media screen and (max-width: 1190px){
+  .before,
+  .during{
+    width: 269px;
+    h2{
+      font-size: 1rem;
+      line-height: 1.625rem;
+    }
+    li{
+      font-size: 0.875rem;
+      line-height: 1.375rem;
+    }
+  }
+}
+
+@media screen and (max-width: 992px){
+  .learning-list{
+    display: block;
+  }
+
+  .before,
+  .during{
+    margin: 0 auto;
+    width: 610px;
+  }
+
+  .before{
+    margin-bottom: 15px;
+  }
+}
+@media screen and (max-width: 769px){
+  .learning-content{
+    padding: 40px 0 20px;
+  }
+  
+  .learning{
+    >p{
+      font-size: 0.75rem;
+      line-height: 1.1825rem;
+    }
+  }
+
+  .learning-list{
+    padding: 20px 0;
+  }
+
+  .learning-title{
+    line-height: 2.5;
+  }
+
+  .before,
+  .during{
+    width: 100%;
+    h2{
+      line-height: 1.5rem;
+    }
+    li{
+      font-size: 0.75rem;
+      line-height: 1.1825rem;
+    }
+  }
+}

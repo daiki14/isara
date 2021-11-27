@@ -1,0 +1,139 @@
+// 共通部分
+html{
+  font-size: 100%;
+  scroll-padding-top: 75px; /* 固定ヘッダの高さ分 */
+  scroll-behavior: smooth;
+  color: #333333;
+}
+
+body{
+  font-family:Meiryo, YuGothic, "Yu Gothic", 游ゴシック, 游ゴシック体, "Noto Sans Japanese", sans-serif;
+  line-height: 1.5;
+  width: 100%;
+  letter-spacing: 0.1rem;
+}
+
+img{
+  max-width: 100%;
+}
+
+a{
+  text-decoration: none;
+}
+
+h1{
+  font-size: 1.75rem;
+  font-weight: bold;
+}
+
+h2{
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+h3{
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+h4{
+  font-size: 0.875rem;
+  line-height: 1.375rem;
+  font-weight: bold;
+}
+
+.wrapper{
+  max-width: 1190px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 0 10px;
+}
+
+.sp,
+.sp-flow,
+.present-list-sp{
+  display: none;
+}
+
+
+.parenthesis {
+  position: relative;
+  width: 860px;
+  padding: 30px 0px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  display: inline-block;
+  &::before,
+  &::after{
+    position: absolute;
+    content: '';
+    width: 50px;
+    height: 50px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  &::before{
+    top: 0;
+    left: 0;
+  }
+  &::after{
+    bottom: 0;
+    right: 0;
+  }
+}
+
+@media screen and (max-width: 1190px){
+  body{
+    letter-spacing: 0.1rem;
+    line-height: 1.625;
+  }
+  h1{
+    font-size: 1.5rem;
+  }
+  h2{
+    font-size: 1rem;
+  }
+  h3{
+    font-size: 0.875rem;
+  }
+  h4{
+    font-size: 0.75rem;
+    line-height: 1.1875rem;
+  }
+  .parenthesis{
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 769px){
+  h1{
+    font-size: 1.125rem;
+  }
+  h2{
+    font-size: 0.9375rem;
+  }
+  h3{
+    font-size: 0.875rem;
+  }
+  h4{
+    font-size: 0.625rem;
+    line-height: 1rem;
+  }
+
+  .sp{
+    display: block;
+  }
+
+  .parenthesis {
+    &::before,
+    &::after{
+      width: 30px;
+      height: 30px;
+    }
+  }
+
+  .wrapper{
+    padding: 0 2.5%;
+  }
+
+}

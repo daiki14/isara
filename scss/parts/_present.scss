@@ -1,0 +1,176 @@
+// present
+.present-content{
+  background: #F7C23C;
+  padding: 60px 0 40px;
+}
+
+.present{
+  text-align: center;
+  h1{
+    margin-bottom: 47px;
+    line-height: 2.5rem;
+  }
+  >p{
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 70px;
+    line-height: 1.625rem;
+    span{
+      color: white;
+      font-weight: bold;
+    }
+  }
+}
+
+.present-list{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 25px;
+  border: solid 2px white;
+}
+
+.present-item{
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background: white;
+  margin: 6px 60px;
+  h2{
+    color: #EBB94D;
+    font-size: 1.5rem;
+    line-height: 2.375rem;
+    padding: 50px 0 10px;
+    font-weight: normal;
+  }
+  p{
+    width: 220px;
+    margin: 0 auto;
+    font-size: 0.875rem;
+    font-weight: bold;
+    line-height: 1.375rem;
+  }
+}
+
+.present-table{
+  position: relative;
+  h1{
+    position: absolute;
+    top: -27px;
+    left: 0;
+    right: 0;
+    padding: auto;
+    line-height: 2.8125rem;
+  }
+  span{
+    background: #F7C23C;
+    font-weight: bold;
+  }
+}
+
+@media screen and (max-width: 1190px){
+  .present{
+    >p{
+      font-size: 0.875rem;
+      line-height: 1.375rem;
+      margin-bottom: 87px;
+    }
+  }
+
+  .present-item{
+    margin: 6px auto;
+    h2{
+      font-weight: normal;
+    }
+  }
+
+  .present-list{
+    margin: 0 30px 40px;
+  }
+}
+
+@media screen and (max-width: 992px){
+  .present-list{
+    display: block;
+    margin-bottom: 0px;
+  }
+
+  .present-item{
+    margin: 10px auto;
+    margin-bottom: 27px;
+  }
+}
+
+@media screen and (max-width: 769px){
+  .present-content{
+    padding: 20px 0;
+  }
+
+  .present{
+    >h1{
+      line-height: 2.5rem;
+      margin-bottom: 20px;
+    }
+    p{
+      font-size: 0.75rem;
+      line-height: 1.1875rem;
+      margin-bottom: 75px;
+    }
+  }
+
+  .present-table{
+    h1{
+      line-height:1.7;
+    }
+  }
+
+  .present-list{
+    display: none;
+  }
+
+  .present-list-sp{
+    display: block;
+    padding: 45px 30px;
+    border: solid 2px white;
+    li{
+      height: 71px;
+    }
+  }
+
+  .present-item-title-sp{
+    border-radius: 50%;
+    background: white;
+    margin: 0 10%;
+    height: 60px;
+    h2{
+      width: 60px;
+      color: #EBB94D;
+      line-height: 60px;
+      font-size: 0.75rem;
+    }
+  }
+
+  .present-item-text-sp{
+    padding-top: 0.75rem;
+    text-align: left;
+    font-size: 0.75rem;
+    line-height: 1.1875rem;
+    color: white;
+    width: 100%;
+    p{
+      font-weight: bold;
+    }
+  }
+  
+  .present-item-sp{
+    display: flex;
+    margin-bottom: 15px;
+    &:last-child{
+      margin-bottom: 0px;
+    }
+  }
+
+  .pc{
+    display: none;
+  }
+}

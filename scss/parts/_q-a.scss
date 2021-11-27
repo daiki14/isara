@@ -1,0 +1,139 @@
+// question
+.q-a-content{
+  padding: 60px 0;
+}
+
+.q-a{
+  text-align: center;
+  h1{
+    line-height: 2.5rem;
+    margin-bottom: 40px;
+  }
+}
+
+.q-a-area{
+  list-style: none;
+  section{
+    margin-bottom: 5px;
+  }
+}
+
+.q-a-title{
+  border: 1px solid rgba(249,121,121,0.2);
+  padding: 20px;
+  text-align: left;
+  margin-bottom: 5px;
+  position: relative;
+  transition: all 0.5s ease;
+  line-height: 1.375rem;
+  width: 1170px;
+  margin: 0 auto;
+  &:hover{
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  &::before,
+  &::after{
+    position: absolute;
+    content: '';
+    width: 15px;
+    height: 5px;
+    background: #E5E5E5;
+  }
+  &::before{
+    top: 48%;
+    right: 25px;
+    transform: rotate(45deg);
+  }
+  &::after{
+    top: 48%;
+    right: 18px;
+    transform: rotate(-45deg);
+  }
+}
+
+.q-a-title.close{
+  &::before{
+    transform: rotate(-45deg);
+  }
+  &::after{
+    transform: rotate(45deg);
+  }
+}
+
+.q-a-box{
+  margin: 0 auto;
+  text-align: left;
+  padding: 20px 20px 30px;
+  display: none;
+  p{
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 1.625rem;
+  }
+}
+
+.fa-question-circle {
+  color: blue;
+}
+
+@media screen and (max-width: 1190px){
+  .q-a-title{
+    line-height: 1.125rem;
+    margin: 0 50px;
+    width: calc(100% - 100px);
+  }
+  
+  .q-a-box{
+    p{
+      font-size: 0.875rem;
+      line-height: 1.375rem;
+    }
+  }
+}
+
+@media screen and (max-width: 769px){
+  .q-a-content{
+    padding: 40px 5px;
+  }
+  
+  .q-a{
+    h1{
+      margin-bottom: 20px;
+    }
+  }
+
+  .q-a-title{
+    padding: 10px;
+    margin: 0;
+    width: 100%;
+    font-size: 0.9175rem;
+    line-height: 1.0625rem;
+    &::before,
+    &::after{
+      position: absolute;
+      content: '';
+      width: 10px;
+      height: 4px;
+      background: #E5E5E5;
+    }
+    &::before{
+      top: 48%;
+      right: 24px;
+      transform: rotate(45deg);
+    }
+    &::after{
+      top: 48%;
+      right: 19px;
+      transform: rotate(-45deg);
+    }
+  }
+
+  .q-a-box{
+    p{
+      font-size: 0.75rem;
+      line-height: 1.1875rem;
+    }
+  }
+
+}

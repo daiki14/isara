@@ -1,0 +1,126 @@
+.answer-content{
+  padding: 40px 0;
+}
+
+.answer{
+  text-align: center;
+  h1{
+    margin-bottom: 10px;
+    line-height: 2.8125rem;
+  }
+}
+
+.answer-text{
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 1.625rem;
+  margin-bottom: 32px;
+}
+
+.answer-caution{
+  font-size: 0.875rem;
+  margin-bottom: 10px;
+  line-height: 1.375rem;
+}
+
+.interview{
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+  margin: 0 195px;
+}
+
+.interview-image{
+  width: 240px;
+  height: 240px;
+  margin-right: 15px;
+  border: 2px solid #ebb94d;
+}
+
+.interview-text{
+  padding: 15px 0 15px 15px;
+  width: 519px;
+  text-align: left;
+  color: #777777;
+}
+
+.interview-comment{
+  font-size: 1.125rem;
+  margin-bottom: 10px;
+  line-height: 1.8125rem;
+}
+.company{
+  text-decoration: underline;
+  font-style: italic;
+}
+
+@media screen and (max-width: 1190px){
+  .answer{
+    h1{
+      line-height: 2.375rem;
+    }
+    .answer-text{
+      font-size: 0.875rem;
+      line-height: 1.375rem;
+    }
+    
+    .answer-caution{
+      font-size: 0.625rem;
+      line-height: 1.1825rem;
+    }
+  }
+  .interview{
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 992px){
+  .interview{
+    margin: 0;
+  }
+  .interview-image{
+    width: 30%;
+    height: auto;
+    img{
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .interview-text{
+    margin-top: 0px;
+  }
+}
+
+@media screen and (max-width: 769px){
+  .answer-content{
+    padding: 20px 0;
+  }
+
+  .answer{
+    h1{
+      line-height: 1.8125rem;
+    }
+  }
+
+  .answer-text,
+  .answer-caution{
+    font-size: 0.75rem;
+    line-height: 1.1825rem;
+  }
+
+  .interview-image{
+    margin-right: 15px;
+    width: 35%;
+    height: auto;
+    img{
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .interview-text{
+    padding: 0;
+  }
+
+}

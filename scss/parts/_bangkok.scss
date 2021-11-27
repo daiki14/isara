@@ -1,0 +1,88 @@
+// bangkok
+.bangkok-content{
+  background-image: url("../img/bangkokbg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 100px 0 90px;
+}
+
+.bangkok{
+  color: white;
+  h2{
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    margin-bottom: 20px;
+  }
+  li{
+    font-size: 1rem;
+    line-height: 1.625rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    &:last-child{
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.bangkok-reason{
+  font-size: 0.875rem;
+  margin-bottom: 20px;
+  line-height: 1.375rem;
+}
+
+.bangkok-result{
+  font-size: 1.25rem;
+  line-height: 2rem;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 1190px){
+  .bangkok-content{
+    padding: 60px 50px 50px;
+  }
+
+  .bangkok{
+    li{
+      font-size: 0.875rem;
+      line-height: 1.375rem;
+    }
+  }
+
+  .bangkok-reason{
+    font-size: 0.75rem;
+    line-height: 1.1875rem;
+  }
+
+  .bangkok-result{
+    font-size: 1rem;
+    line-height: 1.675rem;
+  }
+}
+
+@media screen and (max-width: 769px){
+  .bangkok-content{
+    background-image: url(../img/bangkokbgsp.jpg);
+    padding: 40px 25px 30px;
+  }
+
+  .bangkok{
+    h2{
+      text-align: center;
+    }
+    li{
+      font-size: 0.75rem;
+      line-height: 1.1875rem;
+    }
+  }
+
+  .bangkok-reason{
+    font-size: 0.75rem;
+    line-height: 1.1875rem;
+  }
+
+  .bangkok-result{
+    font-size: 0.9175rem;
+    line-height: 1.5rem;
+  }
+}

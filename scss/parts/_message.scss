@@ -1,0 +1,121 @@
+//message
+.message-content{
+  padding: 60px 0 80px;
+}
+
+.message{
+  text-align: center;
+  h1{
+    margin-bottom: 2.25rem;
+    line-height: 2.5rem;
+  }
+  h2{
+    margin-bottom: 40px;
+    line-height: 2rem;
+  }
+}
+
+.top-content{
+  display: flex;
+  justify-content: center;
+  width: 890px;
+  padding: 0 15px 10px;
+  margin: 0 auto;
+}
+
+.top-image{
+  width: 192px;
+  margin-right: 15px;
+}
+
+.top-message{
+  width: 667px;
+  padding-left: 15px;
+  text-align: left;
+  p,li{
+    font-size: 0.875rem;
+    margin-bottom: 10px;
+    line-height: 1.375rem;
+  }
+}
+
+@media screen and (max-width: 1190px){
+  .message{
+    h2{
+      line-height: 1.625rem;
+    }
+  }
+  
+  .top-content{
+    width: 100%;
+    padding: 0;
+  }
+
+  .top-image{
+    padding: 20px;
+    width: 25%;
+    max-width: 264px;
+  }
+
+  .top-message{
+    padding: 20px;
+    width: 75%;
+    max-width: 793px;
+  }
+}
+
+@media screen and (max-width: 992px){
+  .message{
+    h1{
+    margin-bottom: 35px;
+    }
+    h2{
+      margin-bottom: 60px;
+    }
+  }
+
+  .top-content{
+    display: block;
+  }
+
+  .top-image{
+    display: inline-block;
+    padding: 0 15px;
+    margin-bottom: 5px;
+    max-width: 100%;
+    width: 100%;
+    img{
+      width: 100%;
+    }
+  }
+
+  .top-message{
+    max-width: 100%;
+    width: 100%;
+    padding: 20px 15px 30px;
+  }
+}
+
+@media screen and (max-width: 769px){
+  .message-content{
+    padding: 40px 0;
+  }
+  .message{
+    h1{
+      margin-bottom: 2.25rem;
+    }
+    h2{
+      margin-bottom: 10px;
+      line-height: 1.5rem;
+    }
+  }
+
+  .top-image{
+    padding: 10px 0;
+    margin-bottom: 0;
+  }
+
+  .top-message{
+    padding: 5px 5px 15px;
+  }
+}

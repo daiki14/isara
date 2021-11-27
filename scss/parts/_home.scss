@@ -1,0 +1,54 @@
+// 見出し
+.home-content{
+  background-image: url("../img/main.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 92px 0 103px;
+}
+
+.home-content-wrapper{
+  text-align: center;
+  h1{
+    margin-bottom: 10px;
+    line-height: 2.8125rem;
+  }
+  img{
+    width: 317px;
+    height: 111px;
+    margin-bottom: 40px;
+  }
+  h2{
+    line-height: 1.1;
+  }
+}
+
+@media screen and (max-width: 1190px){
+  .home-content{
+    padding: 104px 0 115px;
+  }
+
+  .home-content-wrapper{
+    h1{
+      line-height: 2.375rem;
+    }
+  }
+}
+
+@media screen and (max-width: 769px){
+  .home-content{
+    padding: 20px 0 31px;
+    background-image: url("../img/mainsp.jpg");
+  }
+  
+  .home-content-wrapper{
+    h1{
+      margin-bottom: 0px;
+      line-height: 1.8125rem;
+    }
+    img{
+      margin-top: 20px;
+    }
+  }
+}
+

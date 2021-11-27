@@ -1,0 +1,134 @@
+// step
+.step-content{
+  background-image: url("../img/aboutsecondbg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 60px 0 40px;
+}
+
+.step{
+  text-align: center;
+  h1{
+    color: white;
+    margin-bottom: 20px;
+    line-height: 2.5rem;
+  }
+  h2{
+    color: white;
+    margin-bottom: 10px;
+    span{
+      color: #ebb94d;
+      font-weight: bold;
+    }
+    &:nth-child(3){
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.step-list{
+  display: flex;
+  justify-content: space-between;
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.step-item{
+  background: white;
+  padding: 30px;
+  border-radius: 7px;
+  width: 32%;
+  h3{
+    color: white;
+    background: #ebb94d;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    line-height: 1.625rem;
+  }
+  h4{
+    margin-bottom: 15px;
+    line-height: 1.375rem;
+  }
+  p{
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 1.625rem;
+  }
+}
+
+@media screen and (max-width: 1200px){
+  .step-list{
+    width: 970px;
+  }
+}
+
+@media screen and (max-width: 1190px){
+  .step-content{
+    padding: 60px 0 40px;
+  }
+  
+  .step{
+    h1{
+      line-height: 1.875rem;
+    }
+    h2{
+      line-height: 1.375rem;
+    }
+  }
+  
+  .step-list{
+    display: block;
+    width: 64%;
+  }
+
+  .step-item{
+    width: 60%;
+    margin: 0 auto 20px;
+    h3,
+    p{
+      line-height: 1.375rem;
+    }
+    h4{
+      line-height: 1.8125rem;
+    }
+  }
+}
+
+@media screen and (max-width: 769px){
+  .step-content{
+    background-image: url("../img/aboutsecondbgsp.jpg");
+    padding: 50px 0 30px;
+  }
+
+  .step{
+    h1{
+      line-height: 1.25rem;
+    }
+    h2{
+      font-size: 0.8125rem;
+      line-height: 1.3125rem;
+    }
+  }
+
+  .step-list{
+    width: 95%;
+  }
+
+  .step-item{
+    padding: 15px 50px;
+    margin-bottom: 15px;
+    width: 100%;
+    h3{
+      margin-bottom: 15px;
+      font-size: 0.75rem;
+    }
+    h4{
+      margin-bottom: 5px;
+      font-size: 0.75rem;
+    }
+    p{
+      font-size: 0.75rem;
+    }
+  }
+}

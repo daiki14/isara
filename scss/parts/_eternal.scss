@@ -1,0 +1,30 @@
+// eternal
+.eternal-content{
+  background: #016EA9;
+}
+
+.eternal{
+  text-align: center;
+  padding: 40px 0;
+}
+
+.eternal-text{
+  font-size: 1.25rem;
+  line-height: 2.5rem;
+  font-weight: bold;
+  color: white;
+}
+
+@media screen and (max-width: 1190px){
+  .eternal-text{
+    font-size: 1rem;
+    line-height: 1.625rem;
+  }
+}
+
+@media screen and (max-width: 769px){
+  .eternal-text{
+    font-size: 0.9375rem;
+    line-height: 1.5rem;
+  }
+}

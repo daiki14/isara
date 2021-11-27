@@ -1,0 +1,36 @@
+// skill up
+.skill-up-content{
+  background: #016EA9;
+}
+
+.skill-up{
+  text-align: center;
+  padding: 40px 0;
+  h2{
+    color: white;
+    line-height: 2rem;
+    span{
+      color: #ebb94d;
+      font-weight: bold;
+    }
+  }
+}
+
+@media screen and (max-width: 1190px){
+  .skill-up{
+    h2{
+      line-height: 1.625rem;
+    }
+  }
+}
+
+@media screen and (max-width: 769px){
+
+  .skill-up{
+    padding: 20px 0;
+    h2{
+      font-size: 0.75rem;
+      line-height: 1.2175rem;
+    }
+  }
+}

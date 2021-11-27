@@ -1,0 +1,140 @@
+// about
+.about-content{
+  background: #FEF5E0;
+  position: relative;
+  padding: 80px 0;
+  .content-title{
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background: #ebb94d;
+    border-radius: 50%;
+    top: -40px;
+    left: calc(50% - 40px);
+    p{
+      font-size: 0.875rem;
+      color: white;
+      line-height: 80px;
+      z-index: 10;
+    }
+  }
+}
+
+.about-pa{
+  margin-bottom: 40px;
+  h1{
+    line-height: 2.5rem;
+  }
+  &::before{
+    border-top: 4px solid #ebb94d;
+    border-left: 4px solid #ebb94d;
+  }
+  &::after{
+    border-bottom: 4px solid #ebb94d;
+    border-right: 4px solid #ebb94d;
+  }
+}
+
+.about{
+  text-align: center;
+}
+
+.about-text{
+  margin-bottom: 30px;
+  h2{
+    line-height: 2rem;
+  }
+}
+
+.skill-list{
+  padding: 32px 0;
+  width: 100%;
+  border: 3px solid #ebb94d;
+  border-radius: 5px;
+  background: white;
+  h2{
+    line-height: 2rem;
+    margin-bottom: 10px;
+  }
+}
+
+.skill{
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.skill-item{
+  padding: 10px 10px 20px;
+  margin-right: 6px;
+  &:last-child{
+    margin-right: 0;
+  }
+  img{
+    margin-bottom: 10px;
+  }
+  p{
+    font-size: 0.75rem;
+    line-height: 1.1875rem;
+  }
+}
+
+@media screen and (max-width: 1190px){
+  .skill-list{
+    h2{
+      line-height: 1.625rem;
+    }
+  }
+}
+
+@media screen and (max-width: 769px){
+  .about-content{
+    position: relative;
+    padding: 60px 0 70px;
+    .content-title{
+      position: absolute;
+      width: 60px;
+      height: 60px;
+      top: -30px;
+      left: calc(50% - 30px);
+      p{
+        font-size: 0.75rem;
+        line-height: 60px;
+      }
+    }
+  }
+
+  .about-pa{
+    height: 130px;
+    margin-bottom: 15px;
+  }
+
+  .about-text,
+  .skill-list{
+    h2{
+      font-size: 0.9375rem;
+      line-height: 1.5rem;
+    }
+  }
+
+  .skill-list{
+    padding: 12px;
+    width: calc(100% - 8px);
+    margin: 0 auto;
+  }
+
+  .skill-item{
+    padding: 5px 5px 15px;
+    margin-right: 6px;
+    &:last-child{
+      margin-right: 0;
+    }
+    img{
+      height: 30px;
+    }
+    p{
+      font-size: 0.625rem;
+      line-height: 1rem;
+    }
+  }
+}
